@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+	<head>
+		<meta charset="ISO-8859-1">
+		<title>LDAP Home Page</title>
+		<link rel="stylesheet" href="css/style.css">
+	</head>
+	<header>
+		<h1><center>Welcome to the LDAP Database!</center></h1>
+	</header>
+	<body>
+	
+		<div id='loginBox'>
+			<h2>Please try to log in!</h2>
+			<form id='loginForm' action='/login' method='post'>
+				<input type='text' name='domainUsername' placeholder='{domain}\{username}' required autofocus/><br><br>
+				<input type='text' name='password' placeholder='password' required /><br><br>
+				<input type='submit' name='Log In'/>
+			</form>
+		</div>
+		
+		
+		
+		
+	</body>
+</html>
